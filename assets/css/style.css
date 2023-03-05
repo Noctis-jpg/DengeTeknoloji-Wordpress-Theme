@@ -1,0 +1,540 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+}
+body header {
+  z-index: 99999;
+  position: relative;
+  padding: 1rem;
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+body header .Header_Menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .Header_Menu .List_Menu {
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+}
+body header .Header_Menu .List_Menu .List_Element {
+  list-style: none;
+}
+body header .Header_Menu .List_Menu .List_Element a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+body .Main_Chapter_One {
+  background-image: url(/assets/img/denge-header-slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  top: 0;
+  padding: 14rem 0;
+  z-index: 10;
+}
+body .Main_Chapter_One .Main_Heading {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0px 30rem;
+}
+body .Main_Chapter_One .Main_Heading h1 {
+  font-size: 35px;
+  text-align: center;
+}
+body .after_Circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  right: 0;
+  bottom: -45px;
+  border-radius: 100px;
+}
+body .Chapter_Twoym {
+  padding: 2rem 0 2rem 0;
+  background-color: white;
+  position: relative;
+  z-index: 99;
+}
+body .Chapter_Twoym .AboutClass {
+  font-size: 48px;
+  letter-spacing: -1.18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+body .Chapter_Twoym .AboutClass p {
+  text-transform: none;
+  line-height: 30px;
+}
+body .Chapter_Twoym .AboutClass img {
+  margin-bottom: 2rem;
+}
+body .Chapter_Twoym .Two_Heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2;
+  padding: 2rem 0;
+}
+body .Chapter_Twoym .Two_Heading h2 {
+  color: #001659;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.4rem;
+}
+body .Chapter_Twoym .Two_Heading p {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  padding: 0 25%;
+  text-align: center;
+  line-height: 32px;
+  color: black;
+  font-size: 20px;
+}
+body .Chapter_Threeym .ThreeSwiper {
+  position: static;
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-slide-active {
+  transition: 0.3s all !important;
+  transform: translateY(0px);
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-slide-active .card {
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.25);
+  transition: 0.3s all !important;
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-slide-active .card .card-body {
+  transition: 0.3s all !important;
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-slide-active .card .card-body img {
+  height: 100% !important;
+  width: 100% !important;
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-slide-active .card .card-body .card_Footer {
+  display: block !important;
+  visibility: visible !important;
+  transition: 0.3s all !important;
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-wrapper .swiper-slide .card img {
+  transition: 0.3s all !important;
+  height: 430px;
+}
+body .Chapter_Threeym .ThreeSwiper .swiper-wrapper .swiper-slide .card .card_Footer {
+  display: none;
+  visibility: hidden;
+  transition: 0.3s all;
+}
+body .Chapter_Threeym .swiper {
+  width: 100%;
+  height: 100%;
+}
+body .Chapter_Threeym .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .Chapter_Threeym .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .Chapter_Threeym .swiper-pagination {
+  position: relative;
+  bottom: 0px;
+}
+body .Chapter_ThreeOps {
+  padding-top: 5rem;
+  padding-bottom: 0rem;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+body .Chapter_ThreeOps .headingAndText h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #001659;
+  letter-spacing: 1px;
+  position: relative;
+}
+body .Chapter_ThreeOps .headingAndText h2 .animationym {
+  color: red;
+  font-size: 80px;
+  position: absolute;
+  top: -8px;
+  margin-left: 0.5rem;
+  -webkit-animation: fade 4s infinite;
+  animation: fade 4s infinite;
+  animation-duration: 0.8s;
+}
+body .Chapter_ThreeOps .headingAndText p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.8rem;
+}
+body .Chapter_ThreeOps .padLR {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo {
+  position: relative;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .MyImg {
+  position: relative;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .MyImg .layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: black;
+  bottom: 0;
+  opacity: 0.4;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .MyImg .Head {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  cursor: pointer;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .MyImg .Head i {
+  font-size: 20px;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .ImgText {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.831372549);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  border: 1px solid #d8d8d8;
+  padding: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .ImgText p {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .ImgText .Closebtn {
+  cursor: pointer;
+}
+body .Chapter_ThreeOps .DengeSwiperTwo .ImgText .Closebtn i {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  top: 10px;
+  font-size: 20px;
+}
+body .Chapter_ThreeOps .swiper-pagination {
+  bottom: 1px;
+  position: relative;
+}
+body .TeknoAbout {
+  padding-bottom: 4rem;
+}
+body .TeknoAbout .padLeft0 {
+  padding-left: 0 !important;
+}
+body .TeknoAbout .Heading .Colorh2 {
+  color: #001659;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+body .TeknoAbout .Heading .queteSpan {
+  font-size: 28px;
+  color: #001659;
+  font-weight: 500;
+  width: 70%;
+  display: inherit;
+  margin-bottom: 25px;
+}
+body .TeknoAbout .Heading .textClass {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+body .TeknoAbout2 .HeadingAboutTwo .Colorh2About {
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: -1.28px;
+  color: #324250;
+}
+body .TeknoAbout2 .HeadingAboutTwo .Padleft {
+  line-height: 28px;
+  margin: 30px 0 40px 0;
+  padding-left: 100px;
+}
+body .TeknoAbout2 .HeadingAboutTwo .Padleft .queteSpan {
+  color: #4c4f52;
+  font-size: 17px;
+  line-height: 1.7;
+}
+body .TeknoAbout2 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .TeknoAbout2 .swiper-slide .imgBorder {
+  position: relative;
+}
+body .TeknoAbout2 .swiper-slide .imgBorder::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 200px;
+  height: 238px;
+  background-color: #001659;
+}
+body .TeknoAbout2 .swiper-slide .imgBorder img {
+  width: 100%;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  z-index: 9;
+  position: relative;
+}
+body .referanslar {
+  padding: 3rem 0;
+  position: relative;
+}
+body .referanslar .headerTitle {
+  padding-bottom: 1.5em;
+  position: relative;
+}
+body .referanslar .headerTitle h2 {
+  color: #001659;
+  font-weight: 600;
+  position: relative;
+}
+body .referanslar .headerTitle h2:after {
+  position: absolute;
+  content: "";
+  width: 15%;
+  color: #001659;
+  border: 3px solid #001659;
+  bottom: -19px;
+  left: 0;
+}
+body .referanslar .headerTitle:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  border: 1px solid rgba(0, 22, 89, 0.1411764706);
+  left: 0;
+  bottom: 15px;
+}
+body .referanslar .referans {
+  position: static;
+  margin-top: 1rem;
+}
+body .referanslar .referans .swiper-wrapper .swiper-slide {
+  transition: all 0.3s;
+}
+body .referanslar .referans .swiper-wrapper .swiper-slide img {
+  filter: grayscale(1);
+}
+body .referanslar .referans .swiper-wrapper .swiper-slide:hover img {
+  filter: grayscale(0);
+}
+body .LogoAlti {
+  padding: 0;
+}
+body .LogoAlti .pad0 {
+  padding: 0;
+}
+body .LogoAlti .Gorsel {
+  position: relative;
+}
+body .LogoAlti .Gorsel .HeadingAndText {
+  position: absolute;
+  top: 0;
+  z-index: 9999;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10%;
+}
+body .LogoAlti .Gorsel .HeadingAndText p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.8rem;
+  width: 60%;
+}
+body .LogoAlti .Gorsel .HeadingAndText .BtnsCont {
+  margin-top: 1rem;
+  transition: 0.3s all;
+}
+body .LogoAlti .Gorsel .HeadingAndText .BtnsCont button {
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: transparent;
+  width: 30%;
+  padding: 0.5rem;
+  font-weight: 600;
+  transition: 0.3s all;
+}
+body .LogoAlti .Gorsel .HeadingAndText .BtnsCont:hover button {
+  transition: 0.3s all;
+  border: 1px solid #001659;
+  background-color: #001659;
+  color: white;
+}
+body footer {
+  padding: 3rem 0;
+  background-color: white;
+  position: relative;
+}
+body footer::after {
+  background-repeat: no-repeat;
+  top: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background-image: url(/assets/img/siliklogo.png);
+}
+body footer .OneSection {
+  padding-left: 30%;
+  z-index: 99;
+  padding-right: 15%;
+  position: relative;
+}
+body footer .OneSection h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33;
+  color: #001659;
+  margin: 1.2rem 0;
+}
+body footer .OneSection p {
+  font-size: 16px;
+  font-weight: 500;
+}
+body footer .OneSection .siteCl {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(0, 122, 255);
+}
+body footer .Icons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 5%;
+}
+body footer .Icons i {
+  font-size: 30px;
+}
+body footer .Slogan {
+  padding-right: 30%;
+  z-index: 99;
+  padding-left: 15%;
+  position: relative;
+  margin-top: 1rem;
+}
+body footer .Slogan h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #001659;
+}
+body footer .Slogan .Corparate {
+  margin-top: 1rem;
+}
+body footer .Slogan .Corparate h6 {
+  color: #001659;
+  font-size: 17px;
+  font-weight: 800;
+}
+body footer .Slogan .IconAndText {
+  margin-top: 1rem;
+}
+body footer .Slogan .IconAndText i {
+  margin-right: 10px;
+}
+body footer .infoPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  padding-right: 15%;
+  padding-left: 20%;
+}
+body footer .infoPage ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5%;
+  margin-bottom: 0;
+  width: 100%;
+  padding-top: 2rem;
+}
+body footer .infoPage ul li {
+  list-style: none;
+}
+body footer .beforeline {
+  position: relative;
+  border-top: 1px solid black;
+  top: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

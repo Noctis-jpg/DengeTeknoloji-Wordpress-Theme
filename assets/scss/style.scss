@@ -1,0 +1,646 @@
+$colordengeblue : #001659;
+$colordengered : #982025;
+$colorWhite : white;
+$fontweight500 : 500;
+$fontfamily :'Poppins',
+sans-serif;
+$fontTextsize : 20px;
+$fontweight600 : 600;
+$headingSize : 35px;
+$headingSizeTwo : 2rem;
+$UcukSize : 50px;
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: $fontfamily !important;
+    font-weight: $fontweight600;
+
+
+    header {
+        z-index: 99999;
+        position: relative;
+        padding: 1rem;
+        position: absolute;
+        /* top: 0; */
+        right: 0;
+        left: 0;
+        z-index: 99;
+        .Header_Menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .List_Menu {
+                display: flex;
+                gap: 5%;
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 0;
+                padding: 0;
+
+                .List_Element {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $colorWhite;
+                        font-family: $fontfamily;
+                        font-weight: $fontweight600;
+                        font-size: 17px;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Main_Chapter_One {
+        background-image: url(/assets/img/denge-header-slider.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding: 14rem 0;
+        z-index: 10;
+
+
+        .Main_Heading {
+            color: $colorWhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 0px 30rem;
+            h1 {
+                font-size: $headingSize;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .after_Circle {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        right: 0;
+        bottom: -45px;
+        border-radius: 100px;
+
+
+    }
+
+    .Chapter_Twoym {
+        padding: 2rem 0 2rem 0;
+        background-color: white;
+        position: relative;
+        z-index: 99;
+
+        .AboutClass {
+            font-size: 48px;
+            letter-spacing: -1.18px;
+            text-transform: uppercase;
+            font-weight: 700;
+            position: relative;
+
+            p {
+                text-transform: none;
+                line-height: 30px;
+            }
+            img{
+                margin-bottom: 2rem;
+            }
+        }
+
+        .Two_Heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            line-height: 2;
+            padding: 2rem 0;
+            h2 {
+                color: $colordengeblue;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: $headingSizeTwo;
+                letter-spacing: 2px;
+                margin-bottom: 1.4rem;
+            }
+
+            p {
+                font-weight: 500;
+                letter-spacing: 0.6px;
+                padding: 0 25%;
+                text-align: center;
+                line-height: 32px;
+                color: black;
+                font-size: $fontTextsize;
+            }
+        }
+    }
+
+    .Chapter_Threeym {
+
+
+        .ThreeSwiper {
+            position: static;
+
+            .swiper-slide-active {
+                transition: .3s all !important;
+                transform: translateY(0px);
+
+                .card {
+                    -webkit-box-shadow: 0 3px 20px 0 rgb(0 0 0 / 25%);
+                    box-shadow: 0 3px 20px 0 rgb(0 0 0 / 25%);
+                    transition: .3s all !important;
+
+                    .card-body {
+                        transition: .3s all !important;
+
+                        img {
+                            height: 100% !important;
+                            width: 100% !important;
+                        }
+
+                        .card_Footer {
+                            display: block !important;
+                            visibility: visible !important;
+                            transition: .3s all !important;
+                        }
+                    }
+                }
+            }
+
+            .swiper-wrapper {
+                display: flex;
+                align-items: center;
+
+                .swiper-slide {
+                    .card {
+                        img {
+                            transition: .3s all !important;
+                            height: 430px;
+                        }
+
+                        .card_Footer {
+                            display: none;
+                            visibility: hidden;
+                            transition: .3s all;
+                        }
+                    }
+                }
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            // position: absolute;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .swiper-pagination {
+            position: relative;
+            bottom: 0px;
+        }
+    }
+
+    .Chapter_ThreeOps {
+        padding-top: 5rem;
+        padding-bottom: 0rem;
+
+        .headingAndText {
+            @mixin animation($str) {
+                -webkit-animation: #{$str};
+                animation: #{$str};
+              }
+              
+              @include keyframes(fade) {
+                0% {
+                  opacity: 1;
+                }
+                50% {
+                  opacity: 0;
+                }
+              }
+            h2 {
+
+                font-size: $headingSizeTwo;
+                font-weight: $fontweight600;
+                color: $colordengeblue;
+                letter-spacing: 1px;
+                position: relative;
+                .animationym{
+                    color: red;
+                    font-size: 80px;
+                    position: absolute;
+                    top: -8px;
+                    margin-left: .5rem;
+                    @include animation('fade 4s infinite');   
+                    animation-duration: .8s;
+                
+                }
+
+            }
+
+            p {
+                font-weight: $fontweight500;
+                font-size: $fontTextsize;
+                line-height: 1.8rem;
+            }
+        }
+
+        .padLR {
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        .DengeSwiperTwo {
+            position: relative;
+
+            .MyImg {
+                position: relative;
+
+                .layer {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    background-color: black;
+                    bottom: 0;
+                    opacity: .4
+                }
+
+                .Head {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    flex-direction: column;
+                    cursor: pointer;
+
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .ImgText {
+                position: absolute;
+                bottom: 0;
+                background-color: #ffffffd4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                display: none;
+                border: 1px solid #d8d8d8;
+                padding: 1.5rem;
+                height: 100%;
+                width: 100%;
+                p {
+                    margin-bottom: 0;
+                    font-weight: $fontweight500;
+                    font-size: 16px;
+                    line-height: 1.8rem;
+                    margin-top: 1rem;
+                    font-weight: 600;
+                }
+                .Closebtn{
+
+                    cursor: pointer;
+                    i{
+                        position: absolute;
+                        right: 15px;
+                        top: 0;
+                        top: 10px;
+                        font-size: 20px;
+                    }
+                    
+                }
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 1px;
+            position: relative;
+        }
+    }
+
+    .TeknoAbout {
+        padding-bottom: 4rem;
+
+        .padLeft0 {
+            padding-left: 0 !important;
+
+        }
+
+        .Heading {
+            .Colorh2 {
+                color: $colordengeblue;
+                font-size: $UcukSize;
+                font-weight: 900;
+                letter-spacing: 1px;
+                margin-bottom: 25px;
+            }
+
+            .queteSpan {
+                font-size: 28px;
+                color: $colordengeblue;
+                font-weight: 500;
+                width: 70%;
+                display: inherit;
+                margin-bottom: 25px;
+            }
+
+            .textClass {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.8rem;
+            }
+        }
+
+    }
+    .TeknoAbout2{
+        .HeadingAboutTwo{
+            .Colorh2About{
+                font-size: 36px;
+                line-height: 1.5;
+                letter-spacing: -1.28px;
+                color: #324250;
+            }
+            .Padleft{
+                line-height: 28px;
+    margin: 30px 0 40px 0;
+    padding-left: 100px;
+            .queteSpan{
+                color: #4c4f52;
+                font-size: 17px;
+                line-height: 1.7;
+            }
+        }
+        }
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .imgBorder{
+                position: relative;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    left: 200px;
+                    height: 238px;
+                    background-color: $colordengeblue;
+                }
+                img{
+                    width: 100%;
+                    padding-right: 20px;
+                padding-bottom: 20px;
+    z-index: 9;
+    position: relative;
+                }
+            }
+        }
+    }
+
+    .referanslar{
+        padding: 3rem 0;
+        position: relative;
+        .headerTitle{
+            padding-bottom: 1.5em;
+            position: relative;
+            h2{
+                color: $colordengeblue;
+                font-weight: 600;
+                position: relative;
+
+                &:after{
+                    position: absolute;
+                    content: "";
+                    width: 15%;
+                    color: $colordengeblue;
+                    border: 3px solid $colordengeblue;
+                    bottom: -19px;
+                    left: 0;
+                }
+            }
+            &:after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                border: 1px solid #00165924;
+                left: 0;
+                bottom: 15px;
+            }
+        }
+        .referans{
+            position: static;
+            margin-top: 1rem;
+
+            .swiper-wrapper{
+                .swiper-slide{
+                    transition: all .3s;
+                    img{
+                        filter: grayscale(1);
+                    }
+                    &:hover{
+                       img{
+                        filter: grayscale(0);
+                       }
+                    }
+                }
+            }
+        }
+    }
+    .LogoAlti{
+        padding: 0;
+        .pad0{
+            padding: 0;
+        }
+        .Gorsel{
+            position: relative;
+            .HeadingAndText{
+                position: absolute;
+                top: 0;
+                z-index: 9999;
+                height: 100%;
+                display: flex;
+                /* align-items: center; */
+                justify-content: center;
+                flex-direction: column;
+                padding-left: 10%;
+                p{
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1.8rem;
+                    width: 60%;
+                }
+                .BtnsCont{
+                    margin-top: 1rem;
+                    transition:.3s all;
+                    button{
+                        font-size: 20px;
+                        border: 1px solid black;
+                        background-color: transparent;
+                        width: 30%;
+                        padding: .5rem;
+                        font-weight: 600;
+                        transition:.3s all;
+                    }
+                    &:hover{
+                        button{
+                            transition:.3s all;
+                        border: 1px solid $colordengeblue;
+                        background-color: $colordengeblue;
+                        color: white;
+                    }
+                    }
+                }
+            }
+        }
+
+    }
+    footer{
+        padding: 3rem 0;
+        background-color: white;
+        position: relative;
+        &::after{
+            background-repeat: no-repeat;
+            top: 0;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            content: "";
+            position: absolute;
+            background-image: url(/assets/img/siliklogo.png);
+        }
+
+        .OneSection{
+            padding-left: 30%;
+            z-index: 99;
+            padding-right: 15%;
+            position: relative;
+            h2{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 1.33;
+                color: $colordengeblue;
+                margin: 1.2rem 0;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .siteCl{
+                font-weight: 500;
+                font-size: 16px;
+                color: rgb(0 122 255)
+            }
+        }
+        .Icons{
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 5%;
+            i{
+                font-size: 30px;
+            }
+        }
+        .Slogan{
+            padding-right: 30%;
+            z-index: 99;
+            padding-left: 15%;
+            position: relative;
+            margin-top: 1rem;
+            h2{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 1.45;
+                color: $colordengeblue;
+            }
+            .Corparate{
+                margin-top: 1rem;
+
+                h6{
+                    color: $colordengeblue;
+                    font-size: 17px;
+                    font-weight: 800;
+                }
+            }
+            .IconAndText{
+                margin-top: 1rem;
+
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+
+ 
+        .infoPage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 99;
+            width: 100%;
+            padding-right: 15%;
+            padding-left: 20%;
+
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 5%;
+                margin-bottom: 0;
+                width: 100%;
+                padding-top: 2rem;
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .beforeline{
+            position: relative;
+            border-top: 1px solid black;
+            top: 1.5rem;
+    }
+    }
+    
+}
